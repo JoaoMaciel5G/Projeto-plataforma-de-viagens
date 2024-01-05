@@ -15,7 +15,7 @@ export function ImagesTours({image, alt, locale, value}: Props){
   return(
     <div>
         <div className="group overflow-hidden rounded-lg relative">
-          <Image src={image} alt={alt} className="transition-transform hover:contrast-50 scale-100 hover:scale-105"/>
+          <Image src={image} alt={alt} className="transition-transform hover:contrast-50 scale-100 hover:scale-105 w-full"/>
           <button className="absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 hover:bg-blue-700 uppercase bg-amber-500 text-zinc-50 rounded-full text-sm tracking-wider px-9 py-3 hidden group-hover:block">Learn More</button>
         </div>
         <div className="flex justify-between my-7">
@@ -54,10 +54,10 @@ export default function Home() {
           <Form/>
         </div>
       </section>
-      <section className="max-lg:mt-[60rem] text-center">
-        <div className="flex justify-between mt-56 mb-28">
+      <section className="max-lg:mt-[65rem]">
+        <div className="flex justify-between mt-56 mb-28 max-[700px]:justify-between">
           <div>
-            <h2 className="text-5xl uppercase ml-40 tracking-wider">our best tours</h2>
+            <h2 className="text-5xl uppercase min-[1000px]:ml-40 ml-10 tracking-wider">our best tours</h2>
           </div>
           <div>
             <button className="bg-amber-500 text-xl text-zinc-50 rounded-full px-10 py-4 uppercase tracking-wider hover:bg-blue-700 mr-3">view all tours</button>
